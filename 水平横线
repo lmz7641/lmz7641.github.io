@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="gb2312">
+  <title>水平文字横线</title>
+</head>
+<style>  
+    .login_content {  
+      position: absolute;  /*绝对定位*/
+      text-align: center;  /*文本居中*/
+      min-width: 450px;   /*设置元素最小宽度*/
+    }  
+
+    .login_content div:after, .login_content div:before {  
+      background: #000;  
+      content: "";  
+      height: 1px;  /*线宽*/
+      position: absolute;  
+      /*线上下距离*/
+      top: 50%;  
+      width: 20%; 
+    }  
+  
+    /*调整背景横线的左右距离*/  
+    .login_content div:before {  
+      left: 0%;  
+    }  
+  
+    .login_content div:after {  
+      right: 0;  
+    }  
+</style>  
+
+</head>  
+<body>  
+
+<div class="login_content">  
+  <div>中间文字，两边横线</div>  
+</div>
+
+</body>
+</html>
